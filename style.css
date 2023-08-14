@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: orange;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+  cursor:pointer;
+}
+
+.logo {
+  float: left;
+}
+/* ~~ Top Navigation Bar ~~ */
+.navigation-bar {
+  background-color: black;
+  height: 60px;
+  width: 100%;
+  text-align: center;
+  opacity: 0.9;
+}
+
+#navigation-container {
+  width: 100%;
+  margin: 0 auto;
+  height: 60px;
+  /* background-color: red; */
+}
+
+.navigation-bar img {
+  float: left;
+  margin: 8px;
+  height: 40px;
+  width: 60px;
+  /* border: 1px solid white; */
+}
+
+.navigation-bar ul {
+  /* float: right; */
+  padding: 0px;
+  margin: 0px;
+  text-align: end;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.navigation-bar li {
+  float: left;
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 10px;
+  margin-bottom: 4px;
+  display: inline;
+  margin-left: 40px;
+}
+
+.navigation-bar li a {
+  color: orange;
+  font-size: 26px;
+  font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 40px;
+  padding: 5px 15px;
+  /* opacity: 0.7; */
+}
+.navigation-bar li a:hover{
+    color: black;
+    background-color: orange;
+    border-radius: 10px;
+    transition:all 0.6s;
+}
+
+/************************* SECTION STARTS HERE **********************************************/
+section{
+    height: auto;
+    /* width: 100%; */
+    /* background-color: black; */
+    /* padding: 40px; */
+    background-image: url("https://media.istockphoto.com/id/1293850746/photo/to-do-list.jpg?b=1&s=170667a&w=0&k=20&c=TnvCl7dU0GaKiMoK6ma9fZV_eBsxNBRmc51r-dBDsRY=");
+    background-repeat: no-repeat;
+    background-size:100%;
+    background-position: fixed;
+}
+.container{
+    /* height: 60vh; */
+    /* border: 2px solid black; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: #555; */
+}
+.container h1{
+    font-size: 40px;
+    /* color: orange; */
+    text-shadow: 2px 2px 10px;
+}
+#w3review{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bold;
+    /* background-color: black;
+    color: cyan; */
+}
+.notehead{
+  /* border: 2px solid black; */
+  margin-bottom: 20px;
+}
+#noteHeading{
+  font-size: 30px;
+  padding: 20px;
+  font-weight: bold;
+  /* background-color: black;
+  color: cyan; */
+}
+.addBtn{
+    margin: 20px;
+}
+button{
+    height: 70px;
+    width: 300px;
+    font-size: 30px;
+    background-color: orange;
+    color: black;
+    transition: all 0.4s;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: black;
+    color: orange;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+/*                    YOUR NOTES PAGE CSS STARTS HERE                   */
+#note_container{
+  background-color: orange;
+  height: 86vh;
+  width: 99vw;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.card{
+  height: auto;
+  width: 29%;
+  /* background-color: black; */
+  background: linear-gradient(to bottom right, black, grey);
+  border: 2px solid white;
+  margin: 10px;
+  padding: 2px 10px;
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+.card:hover{
+  box-shadow: 0px 0px 40px black;
+  cursor: pointer;
+}
+.card h1{
+  color: orange;
+  text-shadow: 0px 0px 2px;
+}
+.card h3, p{
+  color: whitesmoke;
+  font-size: 20px;
+}
+.card .deleteBtn{
+  height: 40px;
+  width: auto;
+  border-radius: 10px;
+  transition: all .4s;
+}
+.card .deleteBtn:hover{
+  border: 2px solid white;
+
+}

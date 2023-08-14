@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- NAVBAR STARTS HERE -->
+    <div class="navigation-bar">
+        <div id="navigation-container">
+          <!-- <img src="https://cdn-icons-png.flaticon.com/512/1/1560.png" height="100px" width="100px"> -->
+          <img src="https://icon-library.com/images/todo-list-icon/todo-list-icon-17.jpg" height="100px" width="100px">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="your_notes.html">Your Notes</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+    </div>
+    <!-- MAIN SECTION PART STARTS HERE -->
+    <section>
+        <div class="container">
+            <h1>Add your note</h1>
+            <div class="notehead">
+              <input type="text" id="noteHeading" placeholder="Enter your Note heading">
+            </div>
+            <textarea id="w3review" name="w3review" rows="10" cols="100" placeholder="Enter your Note"></textarea>
+            <div class="addBtn">
+                <button type="submit" id="addNote" onclick="text_value()">Add your note</button>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
