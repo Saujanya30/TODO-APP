@@ -30,5 +30,5 @@ The app utilizes the browser's local storage to save and retrieve your notes. Th
 This app is built using HTML, CSS, and JavaScript and should be compatible with most modern web browsers.
 
 ## Credits
-This ToDo app was created by [Saujanya Solanki].
+This ToDo app was created by Saujanya Solanki.
 
